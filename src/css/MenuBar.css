@@ -1,0 +1,60 @@
+.custom-menu {
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+  }
+  
+  .logo-item {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Pushes other menu items to the right */
+  }
+  
+  .logo {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-size: 1.2em;
+    color: white; /* Adjust to match your menu theme */
+    font-weight: bold;
+  }
+  
+  .custom-menu .item {
+    font-size: 1.1em;
+    color: white; /* Adjust color for menu items */
+  }
+
+  /* Button Styling */
+.primary-button {
+  background-color: #ff6700 !important; /* Blue color for the primary button */
+  color: white !important;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+.primary-button:hover {
+  background-color: #e65a00 !important; /* Darker blue on hover */
+}
+
+.secondary-button {
+  background-color: transparent !important; /* Transparent background for secondary button */
+  color: #007bff !important; /* Blue text for secondary button */
+  font-weight: bold;
+  padding: 10px 15px;
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 4px;
+}
+
+.secondary-button:hover {
+  background-color: #e65a00 !important; /* Light grey background on hover */
+}
+
+/* Hide buttons when user is signed in */
+.hidden {
+  display: none;
+}
+
+  

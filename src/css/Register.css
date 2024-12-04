@@ -1,0 +1,24 @@
+/* Register.css */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ui.segment {
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ui.button {
+    background-color: #2185d0 !important;
+    color: white !important;
+  }
+  
+  .ui.message {
+    font-size: 1rem;
+  }
+  
+  .ui.grid {
+    height: 100vh;
+  }
+  

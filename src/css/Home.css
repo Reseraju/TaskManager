@@ -1,0 +1,221 @@
+/* Global Fix for Scrolling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Ensures scrollability */
+    box-sizing: border-box;
+  }
+  
+  /* Home Container */
+  .home-container {
+    width: 100%;
+    min-height: 100vh; /* Change height to min-height to allow growth */
+    overflow: visible; /* Ensure content is visible */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Use the full viewport height */
+  overflow: hidden;
+}
+
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+    object-position: center; 
+  }
+  
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 2;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 2rem;
+    background-color: #ff6700;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e65a00;
+  }
+  
+  /* Search Section Styling */
+  .search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f2f2f2;
+    padding: 1.5rem;
+    margin: -50px auto 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    z-index: 3;
+    position: relative;
+  }
+  
+  .search-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+  }
+  
+  .search-field label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .search-field input,
+  .search-field select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .search-field input:focus,
+  .search-field select:focus {
+    border-color: #000;
+  }
+  
+  .search-button {
+    padding: 0.8rem 2rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #444;
+  }
+  
+  /* Change Background Color After 100vh */
+  .home-container > div:not(.hero-section) {
+    background-color: white;
+  }
+  
+  /* Info Section Styling */
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the text content */
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Increased gap between the grey boxes */
+    width: 60%;
+  }
+  
+  /* Heading for the Information Section */
+  .info-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 3rem auto 4rem;
+    color: #0F0F0F; /* Dark grey text */
+  }
+  
+  /* Subheading for the Information Section */
+  .info-subheading {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto 2rem;
+    background-color: #f9f9f9;
+    color: #000000; /* Medium grey text */
+    line-height: 1.5;
+  }
+  
+  /* Individual information blocks in grey boxes */
+  .info-item {
+    padding: 1rem;
+    background-color: #e0e0e0; /* Light grey background for boxes */
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-item:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .info-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333; /* Dark grey text */
+  }
+  
+  .info-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555; /* Medium grey text */
+  }
+  
+  /* Styling for the image */
+  .info-image {
+    width: 35%;
+  }
+  
+  .info-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
